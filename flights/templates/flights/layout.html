@@ -1,9 +1,18 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Flights</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
     </head>
     <body>
+        <div class="topnav">
+            <a href="{% url 'index' %}">HOME</a> |
+            <a href="{% url 'indexNo' %}">FLIGHT LIST</a> |
+            <a href="{% url 'logout' %}">LOG OUT</a> </p>
+        
+            
+        </div>
         {% block body %}
         {% endblock %}
     </body>
